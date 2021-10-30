@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../dist/main.css">
+        <script src="../dist/bundle.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h2 class="header-text">🌞 Weather Pro 🌞</h2>
+        </header>
+        <main>
+            <form class="weather-form-enter-location weather-form">
+                <input type="text" placeholder="Enter a city, country or continent!" name="location">
+                <button type="submit">Find</button>
+            </form>
+            <p class="or">OR</p>
+            <form class="weather-form-current-location weather-form">
+                <button>Get Weather of your current location</button>
+            </form>
+            <div class="weather-box hidden"></div>
+        </main>
+    </body>
+</html>

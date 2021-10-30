@@ -1,0 +1,132 @@
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/_variables.scss ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Lobster&family=Work+Sans:wght@400;700&display=swap);
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss ***!
+  \*****************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Lobster&family=Work+Sans:wght@400;700&display=swap);
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/_variables.scss (1) ***!
+  \*************************************************************************************************************************/
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss (1) ***!
+  \*********************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans";
+}
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+header .header-text {
+  font-family: "Lobster";
+  color: #003bc3;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+main {
+  margin: 5rem auto 0 auto;
+  width: max(50%, 35rem);
+}
+
+.weather-form {
+  margin-top: 3rem;
+}
+.weather-form input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-bottom: solid 3px #5959ff;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  animation: weatherFormInputAnimation 2s ease-in-out;
+  outline: none;
+}
+.weather-form button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #0a4ff0;
+  color: white;
+  padding: 1rem;
+  outline: none;
+}
+.weather-form button:hover {
+  background-color: #003bc3;
+  cursor: pointer;
+}
+
+.weather-form-current-location {
+  margin-top: 2rem;
+}
+
+.or {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.weather-box {
+  margin-top: 3rem;
+  border: solid 3px #003bc3;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.component-stat-name {
+  border-radius: 20px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #0a4ff0 2px;
+  background-color: transparent;
+}
+
+.component-stat-value {
+  border-radius: 20px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: linear-gradient(to bottom right, #5959ff, #003bc3);
+  color: white;
+}
+
+.component-stat-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr 4fr;
+  gap: 0.5em;
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes weatherFormInputAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

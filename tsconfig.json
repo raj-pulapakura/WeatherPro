@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "target": "es5",
+        "allowJs": true,
+        "moduleResolution": "node"
+    }
+}
